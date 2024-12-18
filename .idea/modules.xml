@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/1d-dp/1d-dp.iml" filepath="$PROJECT_DIR$/1d-dp/1d-dp.iml" />
       <module fileurl="file://$PROJECT_DIR$/Dynamic programming  extra.iml" filepath="$PROJECT_DIR$/Dynamic programming  extra.iml" />
       <module fileurl="file://$PROJECT_DIR$/dp-on-grids/dp-on-grids.iml" filepath="$PROJECT_DIR$/dp-on-grids/dp-on-grids.iml" />
     </modules>
