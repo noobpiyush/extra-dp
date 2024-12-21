@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/1d-dp/1d-dp.iml" filepath="$PROJECT_DIR$/1d-dp/1d-dp.iml" />
       <module fileurl="file://$PROJECT_DIR$/Dynamic programming  extra.iml" filepath="$PROJECT_DIR$/Dynamic programming  extra.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dp-2dN3d/dp-2dN3d.iml" filepath="$PROJECT_DIR$/dp-2dN3d/dp-2dN3d.iml" />
       <module fileurl="file://$PROJECT_DIR$/dp-on-grids/dp-on-grids.iml" filepath="$PROJECT_DIR$/dp-on-grids/dp-on-grids.iml" />
     </modules>
   </component>
