@@ -21,7 +21,7 @@ Constraints:
 
     public static int count(int coins[], int sum) {
         // code here.
-
+        return 1;
     }
 
 //    gfg working code
