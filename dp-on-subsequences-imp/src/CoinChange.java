@@ -96,8 +96,8 @@ Constraints:
 //    public static int Memo(int coins[], int sum, int index, int dp[][]) {
 //
 //        if (index == 0) {
-//            if (sum % coins[0] == 0) return sum / coins[index];
-//            else return 0;
+//            if (sum % coins[0] == 0) return sum / coins[0];
+//           return (int) Math.pow(10, 9);
 //        }
 //
 //        if (dp[index][sum] != -1) return dp[index][sum];
@@ -109,7 +109,7 @@ Constraints:
 //            take = 1 + Memo(coins, index, sum - coins[index], dp);
 //        }
 //
-//        return dp[index][sum] = take + notTake;
+//        return dp[index][sum] = Math.min(take, notTake);
 //    }
 
 //    public static int Tab(int coins[], int sum) {
@@ -119,24 +119,31 @@ Constraints:
 //
 //        for (int target = 0; target <= sum; target++) {
 //
-//            if (sum % coins[target] == 0) {
-//                dp[0][target] = sum / coins[target];
+//            if (target % coins[0] == 0) {
+//                dp[0][target] = target / coins[0];
 //            }
+//              else
+//                dp[0][target] = (int) Math.pow(10, 9);
 //        }
 //
 //        for (int index = 1; index < n; index++) {
 //
 //            for (int target = 1; target <= sum; target++) {
 //                int notTake = 0 + dp[index - 1][target];
-//                int take = 0;
+//                int take = (int) Math.pow(10, 9);
 //                if (target >= coins[index]) {
 //                    take = 1 + dp[index][target - coins[index]];
 //                }
 //
-//                dp[index][target] = take + notTake;
+//                dp[index][target] = Math.min(take,notTake);
 //            }
 //        }
 //
-//        return dp[n - 1][sum];
+//       int ans = dp[n - 1][sum];
+//
+//        // If it's not possible to achieve the target sum, return -1
+//        if (ans >= (int) Math.pow(10, 9))
+//            return -1;
+//        return ans;
 //    }
 }
